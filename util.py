@@ -18,7 +18,7 @@ def is_var(var):
 
     return isinstance(var, lc.Variable)
 
-def match(state1, state2, bindings=None):
+def match(state1: object, state2: object, bindings: object = None) -> object:
     """Match two statements and return the associated bindings or False if there
         is no binding
 
